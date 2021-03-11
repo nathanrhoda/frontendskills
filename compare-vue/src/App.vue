@@ -42,8 +42,8 @@
             <p>The footer be putting its foot down</p>
           </div>
           <div class="column has-text-right">
-            <a class="icon" href="#"><i class="fa fa-facebook"></i></a>              
-            <a class="icon" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="icon" href="https://www.linkedin.com/in/nathan-rhoda-17291a22"><i class="fa fa-linkedin"></i></a>              
+            <a class="icon" href="https://twitter.com/nathanrhoda"><i class="fa fa-twitter"></i></a>
           </div>
         </div>
       </div>

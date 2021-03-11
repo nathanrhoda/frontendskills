@@ -11,6 +11,48 @@
         </div>
       </div>
     </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns pd is-desktop">
+          <div class="column is-1 has-text-centered">
+            <i class="fa fa-cog is-primary"></i>
+          </div>
+           <div class="column is-one-third-desktop">
+            <p class="title"><strong>Engineering Technologist</strong></p>
+          </div>
+            <div class="column">
+            <p id="welcometext">With close to 20 years experience in technology. Skilled at developing and formulating a strategy around a business outcome, hands on implementation of solutions as well as growing and leading teams to 
+              deliver on a vision.</p>
+          </div>
+        </div>
+      </div>
+      <div class="columns pd">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">Knowing is not enough we must apply. Willing is not enough we must do.</p>
+              <p class="subtitle has-text-right">- Bruce Lee</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">Knowing is not enough we must apply. Willing is not enough we must do.</p>
+              <p class="subtitle has-text-right">- Bruce Lee</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">Knowing is not enough we must apply. Willing is not enough we must do.</p>
+              <p class="subtitle has-text-right">- Bruce Lee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -42,13 +84,23 @@ export default {
       font-size: 2.5rem
     +desktop
       font-size: 4rem
-      margin-top: 2rem
+      margin-top: 2rem       
 
   .subtitle
-    color: #fff    
-      
-
+    color: #fff  
 
 h2
   margin: 1.5rem 0 2rem 0 !important  
+
+.fa-cog
+  font-size: 40px
+
+#learn
+  +desktop
+    margin-bottom: 2rem    
+
+.pd
+  +tablet
+    padding: 2em 0
+
 </style>
