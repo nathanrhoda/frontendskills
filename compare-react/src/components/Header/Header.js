@@ -3,45 +3,58 @@ import React, { Component } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 
-//State full component class etc
-function Header() {
-    return(
-        <div class="nav has-shadow">
-        <div class="container">
-          <div class="nav-left">
-            
-            <a class="nav-item">Cultivating Antifragility</a>          
-          </div>  
-  
-          <span class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-  
-          <div class="nav-right nav-menu">
-            <Link to='/' className="nav-item r-item">Home</Link>
-            <Link to='/faq' className="nav-item r-item">Blog</Link>
-            <Link to='/faq' className="nav-item r-item">Video</Link>
-            <Link to='/faq' className="nav-item r-item">About</Link>
-            <Link to='/faq' className="nav-item r-item">FAQ</Link>
+//State full component Class etc
+class Header extends Component {
 
-            <div class="nav-item">
-              <p class="control">
-                <a class="button is-primary is-outlined">
-                  <span class="icon">
-                    <i class="fa fa-envelope"></i>
-                  </span>
-                  <span>Contact Me</span>
-                </a>
-              </p>
+    constructor(props){
+        super(props);
+        this.state = {isToggleOn: false};
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.setState(prevState => ({
+            isToggleOn: !prevState.isToggleOn
+        }))
+    }
+
+    render() {
+        let menuActive = this.state.isToggleOn ? 'is-active': '';
+        return(
+            <div className="nav has-shadow">
+            <div className="container">
+            <div className="nav-left">
+                
+                <a className="nav-item">Cultivating Antifragility</a>          
+            </div>  
+    
+            <span className={"nav-right nav-menu "+menuActive} onClick={this.handleClick}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+    
+            <div className={"nav-right nav-menu "+menuActive}>          
+                <Link to='/' className="nav-item r-item">Home</Link>                      
+                <Link to='/faq' className="nav-item r-item">FAQ</Link>
+
+                <div className="nav-item">
+                <p className="control">
+                    <a className="button is-primary is-outlined">
+                    <span className="icon">
+                        <i className="fa fa-envelope"></i>
+                    </span>
+                    <span>Contact Me</span>
+                    </a>
+                </p>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
-      </div>
-    );
-}
- 
+        );
+    }
+} 
 export default Header;
 
   
