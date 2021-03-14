@@ -29,7 +29,7 @@ class Header extends Component {
                 <a className="nav-item">Cultivating Antifragility</a>          
             </div>  
     
-            <span className={"nav-right nav-menu "+menuActive} onClick={this.handleClick}>
+            <span className={"nav-toggle "+menuActive} onClick={this.handleClick}>
                 <span></span>
                 <span></span>
                 <span></span>
