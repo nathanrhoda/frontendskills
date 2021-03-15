@@ -1,0 +1,44 @@
+<div class="nav has-shadow">
+    <div class="container">
+      <div class="nav-left">
+        <a routerLink="/" class="nav-item">Cultivating Antifragility</a>          
+      </div>  
+ 
+      <span class="nav-toggle" (click)="toggleNav = !toggleNav;" [ngClass]="{'is-active': toggleNav }">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <div class="nav-right nav-menu" [ngClass]="{'is-active': toggleNav}">          
+        <a routerLink="/" class="nav-item r-item">Home</a>
+        <a routerLink="/faq" class="nav-item r-item">FAQ</a>                
+
+        <div class="nav-item">
+          <p class="control">
+            <a class="button is-primary is-outlined">
+              <span class="icon">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <span>Contact Me</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<router-outlet></router-outlet>
+
+<footer class="footer is-primary">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <p>The footer be putting its foot down</p>
+      </div>
+      <div class="column has-text-right">
+        <a class="icon" href="https://www.linkedin.com/in/nathan-rhoda-17291a22"><i class="fa fa-linkedin"></i></a>              
+        <a class="icon" href="https://twitter.com/nathanrhoda"><i class="fa fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
