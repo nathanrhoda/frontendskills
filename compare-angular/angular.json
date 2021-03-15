@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [              
-              "src/styles.sass"              
+              "node_modules/bulma/bulma.sass",
+              "src/styles.sass"
             ],
             "scripts": []
           },
@@ -90,9 +91,9 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "../node_modules/bulma/bulma.sass",
-              "styles.sass"
+            "styles": [              
+              "node_modules/bulma/bulma.sass",
+              "src/styles.sass"
             ],
             "scripts": []
           }
